@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0B8F4D">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-title" content="Campus+">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Campus+</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <header class="topo">
+    <p class="ola">Heberty e Ruan 👋</p>
+    <h1>Campus+ <span class="selo-app">modo app</span></h1>
+  </header>
+    <main>
+    <section id="inicio" class="tela">
+      <div class="card destaque">
+        <p class="rotulo">Próxima aula</p>
+        <h2>Construção de Sites</h2>
+        <p>🕖 14h20 · Laboratório 2</p>
+      </div>
+
+      <h3 class="titulo-secao">Avisos</h3>
+      <article class="card aviso">
+        <span class="etiqueta">Hoje</span>
+        <h4>Entrega do app PWA</h4>
+        <p>Envie o link do GitHub Pages até as 22h.</p>
+      </article>
+      <article class="card aviso">
+        <span class="etiqueta azul">Sexta</span>
+        <h4>Semana de Ciência e Tecnologia</h4>
+        <p>Inscrições abertas na coordenação.</p>
+      </article>
+    </section>
+        <section id="horario" class="tela">
+      <h2 class="titulo-tela">Horário da semana</h2>
+      <details class="dia" open>
+        <summary>Segunda</summary>
+        <ul>
+          <li><b>14h20</b> Construção de Sites</li>
+          <li><b>15h40</b> Banco de Dados</li>
+        </ul>
+      </details>
+      <details class="dia">
+        <summary>Terça</summary>
+        <ul>
+          <li><b>15h40</b> Engenharia de Software</li>
+          <li><b>9h40</b> Inglês Técnico</li>
+        </ul>
+      </details>
+      <details class="dia">
+        <summary>Quarta</summary>
+        <ul>
+          <li><b>15h10</b> Redes de Computadores</li>
+          <li><b>14h20</b> Construção de Sites</li>
+        </ul>
+      </details>
+      <details class="dia">
+        <summary>Quinta</summary>
+        <ul>
+          <li><b>14h20</b> Segurança da Informação</li>
+          <li><b>15h10</b> Projeto Integrador</li>
+        </ul>
+      </details>
+    
+      </details>
+    </section>    <section id="cardapio" class="tela">
+      <h2 class="titulo-tela">Cardápio da semana</h2>
+      <div class="grade-cardapio">
+        <div class="card prato"><span>🍛</span><h4>Seg</h4><p>Arroz, feijão e frango</p></div>
+        <div class="card prato"><span>🍝</span><h4>Ter</h4><p>Macarrão à bolonhesa</p></div>
+        <div class="card prato"><span>🥘</span><h4>Qua</h4><p>Cuscuz com ovo</p></div>
+        <div class="card prato"><span>🍲</span><h4>Qui</h4><p>Sopa de legumes</p></div>
+        <div class="card prato"><span>🍔</span><h4>Sex</h4><p>Hambúrguer caseiro</p></div>
+      </div>
+    </section>
+
+    <section id="perfil" class="tela">
+      <h2 class="titulo-tela">Meu cartão</h2>
+      <div class="carteirinha">
+        <div class="foto">🧑‍🎓</div>
+        <h3>Ruan</h3>
+        <p>Técnico em Informática</p>
+        <p class="matricula">Matrícula 2026.0001</p>
+      </div>
+    </section>
+  </main>  <nav class="abas">
+    <a href="#inicio"><span>🏠</span>Início</a>
+    <a href="#horario"><span>🗓️</span>Horário</a>
+    <a href="#cardapio"><span>🍽️</span>Cardápio</a>
+    <a href="#perfil"><span>👤</span>Perfil</a>
+  </nav>
+  <div id="convite" class="convite" hidden>
+    <p><b>📲 Instale o Campus+</b><br>Abra direto da tela inicial, até sem internet.</p>
+    <button id="botao-instalar">Instalar</button>
+    <button id="botao-depois" class="secundario">Agora não</button>
+  </div>
+
+  <div id="aviso-ios" class="convite" hidden>
+    <p><b>📲 Instale no iPhone:</b> toque em <b>Compartilhar</b> (quadrado com seta ⬆️) e depois em <b>Adicionar à Tela de Início</b>.</p>
+    <button id="botao-fechar-ios" class="secundario">Entendi</button>
+  </div>
+
+  <script src="app.js"></script></body>
+</html>
